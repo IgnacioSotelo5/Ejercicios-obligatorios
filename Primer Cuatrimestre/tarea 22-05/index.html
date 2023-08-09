@@ -1,0 +1,84 @@
+<!-- Tarea para el lunes 22/05:
+a partir del codigo HTML dado:
+completar el archivo HTML para relacionarlo a su correspondiente archivo css
+estructurar el archivo HTML (elementos h1, h2, ol, ul, li, img, etc.)
+asignar clases y id a los elementos HTML que se crea necesario para estilar y/o navegar
+Estilar toda la página utilizando loss 3 selectores vistos en clase (tag, clase, id)
+Utilizar elementos anchor en la nav bar para redireccionar a las secciones (por id)
+Utilizar elemento anchor para redireccionar ya sea clickeando en un logo o un texto, a la pagina del restaurante deseado.
+bloque HTML: -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pontevedra - Restaurant</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+        <h1>Pontevedra</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#seccion-entradas">Entradas</a></li>
+                <li><a href="#seccion-platos-principales">Platos Principales</a></li>
+                <li><a href="#seccion-postres">Postres</a></li>
+                <li><a href="#seccion-bebidas">Bebidas</a></li>
+            </ul>
+        </nav>
+    
+    </header>  
+    <div id="hero">
+    </div>
+
+    <main>
+        <article id="seccion-entradas">
+            <h2>Entradas</h2>
+            <ul>
+                <li>Empanadas</li>
+                <li>Croquetas de jamón</li>
+                <li>Ensalada de la casa</li>
+            </ul>
+
+        </article>
+
+        <article id="seccion-platos-principales">
+            <h2>Platos Principales</h2>
+            <ul>
+                <li>Asado de tira</li>
+                <li>Pizza de pepperoni</li>
+                <li>Pechuga de pollo a la plancha</li>
+            </ul>
+
+        </article>
+
+        <article id="seccion-postres">
+            <h2>Postres</h2>
+            <ul>
+                <li>Tiramisú</li>
+                <li>Flan</li>
+                <li>Helado de vainilla</li>
+            </ul>
+        </article>
+
+        <article id="seccion-bebidas">
+            <h2>Bebidas</h2>
+            <ul>
+                <li>Cerveza</li>
+                <li>Vino tinto</li>
+                <li>Gin</li>
+            </ul>
+
+        </article>
+    </main>          
+
+
+    <footer>
+        <p> Pontevedra - Todos los derechos reservados </p>
+        <a href="https://www.facebook.com/pontevedramdp" target="_blank"><img src="../tarea 22-05/resources/logo/icons8-facebook.svg" alt="logo Facebook"></a>
+        <a href="https://www.google.com.ar/maps/place/Pontevedra+Comida+Gallega/@-37.9836885,-57.6656205,12.36z/data=!4m13!1m5!2m4!1sRestaurantes!5m1!4e9!6e5!3m6!1s0x9584dea6914b200b:0x1acbe380704faf4!8m2!3d-38.0126085!4d-57.5545305!15sCgxSZXN0YXVyYW50ZXNaDiIMcmVzdGF1cmFudGVzkgEKcmVzdGF1cmFudOABAA!16s%2Fg%2F1tfcdbw0"><img src="../tarea 22-05/resources/logo/icons8-google-maps.svg" alt="logo Maps"></a>
+    </footer>
+
+ 
+  </body>
+</html>
+

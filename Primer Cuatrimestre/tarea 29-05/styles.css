@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: rgb(176, 172, 172);
+    width: 600px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5px ;
+}
+
+.header span{
+    margin-top: 10px;
+    height: 25%;
+}
+
+.menu{
+    color: white;
+    background-color: rgb(58, 206, 58);
+    height: 20px;
+    width: 200px;
+    padding: 2px 4px;
+    align-self: flex-end;
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
+
+.logo{
+    color: white;
+    background: darkblue;
+    height: 20px;
+    width: 100px;
+    padding: 2px 4px;
+    margin-bottom: 6px;
+    border: 1px solid black;
+
+}
+
+.menu-2{
+    color: white;
+    background-color: darkred;
+    height: 20px;
+    width: 250px;
+    padding: 2px 4px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 608px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.main div{
+    background-color: red;
+    width: 180px;
+    height: 210px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 8px;
+    color: white;
+    border: 1px solid black;
+
+}
+#div_l{
+    background-color: rgb(68, 67, 67);
+}
+
+#div_c{
+    background-color: lightseagreen;
+}
+
+#div_r{
+    background-color: orange;
+}
+
+#div_l2{
+    background-color: green;
+}
+#div_r2{
+    background-color: rgb(206, 70, 33);
+}
+.main div:nth-child(4){
+    flex-grow: 2;
+    margin-right: 1rem
+}
+
+
+.footer{
+    width: 608px;
+    height: 90px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+
+}
+
+.footer-element{
+    background-color: blue;
+    width: 100px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    align-self:flex-end;
+    margin-right: 10px;
+    border: 1px solid black;
+
+}
