@@ -6,9 +6,9 @@
 // 4- función info muestra canal, volumen y la hora actual
 
 class TV{
-    isOn: boolean;
-    volume: number;
-    channel:number;
+    private isOn: boolean;
+    private volume: number;
+    private channel:number;
     constructor(on: boolean, chn: number , vol: number){
         this.isOn = on
         this.volume = vol
@@ -19,27 +19,42 @@ class TV{
         console.log(this.isOn ? 'Encendido' : 'Apagado');
     }
     volUp(): void{  
-        if (this.volume >= 100 || !this.isOn) return
+        if (this.volume == 100 || !this.isOn) return
         this.volume ++
     }
     volDown(): void{
-        if (this.volume <= 0 || !this.isOn) return
+        if (this.volume == 0 || !this.isOn) return
         this.volume --
     }
     channelUp(): void{
-        if (this.channel >= 99 || !this.isOn) return
-        this.channel ++
+        if(!this.isOn) return
+
+        if (this.channel == 99){
+                this.channel = 1;
+            } else{
+                this.channel ++
+            }
+        
+        console.log(this.channel);
+        
     }
+    
     channelDown(): void{
-        if (this.channel <= 1 || !this.isOn) return
-        this.channel --
+        if(!this.isOn) return
+
+        if (this.channel == 1){
+                this.channel = 99;
+            } else{
+                this.channel --
+            }
+        
+        console.log(this.channel);
 
     }
     pickChannel(chn: number): void{
-
-        if (!this.isOn){
-            return
-        } else if (chn > 0 && chn < 100){
+        if(!this.isOn) return
+        
+        if (chn > 0 && chn < 100){
             this.channel = chn
             console.log(`Cambiaste al canal ${chn}`);
         } else {
@@ -58,4 +73,15 @@ class TV{
     }
 }
 
-const tv01 = new TV (true, 0, 1)
+const tv01 = new TV (false, 1, 1)
+
+tv01.switchOnOff();
+tv01.channelDown();
+tv01.channelUp();
+tv01.volUp();
+tv01.volUp();
+tv01.volUp();
+tv01.volUp();
+tv01.pickChannel(55)
+tv01.infoTV();
+

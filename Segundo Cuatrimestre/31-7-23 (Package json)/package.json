@@ -1,0 +1,20 @@
+{
+  "name": "ejemplo-crear-proyecto",
+  "version": "1.0.0",
+  "description": "proyecto node js",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc index.ts",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "@types/readline-sync": "^1.4.4"
+  }
+}
